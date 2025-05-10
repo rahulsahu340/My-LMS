@@ -83,17 +83,18 @@ WSGI_APPLICATION = 'LMS.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-DATABASES={
-    "default":dj_database_url.parse("postgres://seekhodb_vtet_user:6ZShj978nZOZByW8ae5ybb1DhNQpqn1N@dpg-cndjtmv109ks738s7st0-a.singapore-postgres.render.com/seekhodb_vtet")
+'''
+DATABASES = {
+    "default": dj_database_url.parse("postgresql://mydb_7bve_user:k0KBPj6QfZdItLnrSXDxS8d3dYWRXLRm@dpg-d0fmpa2dbo4c73akp7vg-a.singapore-postgres.render.com/mydb_7bve")
 }
+
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
